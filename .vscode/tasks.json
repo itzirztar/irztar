@@ -1,0 +1,34 @@
+{
+	// see https://go.microsoft.com/fwlink/?LinkId=733558 
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "serve project",
+			"type": "shell",
+			"command": "npm run serve",
+			"group": {
+				"kind": "test",
+				"isdefault": true
+			},
+			"isbackground": true
+		},
+		{
+			"label": "build project",
+			"type": "shell",
+			"command": "npm run build",
+			"group": {
+				"kind": "build",
+				"isdefault": true
+			},
+			"isbackground": true
+		},
+		{
+			"label": "create new project",
+			"type": "shell",
+			"command": "vue create .",
+			"isbackground": false,
+			"problemmatcher": []
+		}
+	]
+}
